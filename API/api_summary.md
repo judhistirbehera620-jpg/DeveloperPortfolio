@@ -1,41 +1,33 @@
-# API Interaction Project
+# API Interaction – Q3
 
-## Student Details
-- Name: Judhistir Behera
-- Roll Number: 2601730433
-
-## Project Description
-This project demonstrates API interaction using Python.
+## Objective
+To fetch user data from a public REST API using Python.
 
 ## API Used
-JSONPlaceholder Public REST API
+https://jsonplaceholder.typicode.com/users
 
-## Endpoint
-https://jsonplaceholder.typicode.com/posts/1
+## Method
+GET
 
-## Programming Language
-Python 3
-
-## Libraries Used
+## Tools Used
+- Python 3
 - urllib.request
-- json
+- json module
+- Ubuntu Linux
 
-## Functionality
-1. Connects to a public API.
-2. Sends an HTTP GET request.
-3. Receives JSON data.
-4. Processes the API response.
-5. Saves the response in api_response.json.
+## Working
+1. The Python script sends a GET request to the API.
+2. The API returns JSON data containing user details.
+3. Python reads and parses the JSON response.
+4. The data is saved into users.json.
+5. The script displays the total number of users fetched.
 
 ## Output
-The API successfully returns:
-- User ID
-- Post ID
-- Title
-- Body
+- API data fetched successfully!
+- Total users: 10
+- Saved to users.json
 
-## Learning Outcomes
-- Understanding REST APIs.
-- Sending HTTP requests.
-- Processing JSON responses.
-- Saving API data using Python.
+## Files
+- api_fetch.py – Python API fetching script
+- users.json – API response data
+- api_summary.md – API documentation

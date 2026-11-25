@@ -1,0 +1,23 @@
+====================================
+       SYSTEM INFORMATION REPORT
+====================================
+Student: Judhistir Behera
+Roll Number: 2601730433
+Date: Wed Nov 25 17:12:48 UTC 2026
+
+========== CPU INFORMATION ==========
+CPU(s):                                  8
+Model name:                              AMD Ryzen 5 7520U with Radeon Graphics
+
+========== MEMORY INFORMATION ==========
+               total        used        free      shared  buff/cache   available
+Mem:           3.5Gi       466Mi       2.8Gi       4.1Mi       321Mi       3.0Gi
+Swap:          1.0Gi          0B       1.0Gi
+
+========== TOP 3 PROCESSES ==========
+    PID COMMAND         %CPU
+   1388 ps               100
+   1389 head             100
+      1 systemd          0.2
+
+System report generated successfully!

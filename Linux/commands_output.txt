@@ -1,0 +1,58 @@
+========== ls -la ~ ==========
+total 84
+drwxr-x--- 9 judhistir_369 judhistir_369 4096 Nov 25 16:49 .
+drwxr-xr-x 3 root          root          4096 Sep 30 19:31 ..
+-rw------- 1 judhistir_369 judhistir_369 9401 Nov 17 05:56 .bash_history
+-rw-r--r-- 1 judhistir_369 judhistir_369  220 Sep 30 19:31 .bash_logout
+-rw-r--r-- 1 judhistir_369 judhistir_369 3771 Sep 30 19:31 .bashrc
+drwxr-x--- 4 judhistir_369 judhistir_369 4096 Sep 30 19:33 .cache
+drwxr-x--- 3 judhistir_369 judhistir_369 4096 Sep 30 19:33 .config
+-rw-r--r-- 1 judhistir_369 judhistir_369   99 Nov 25 16:49 .gitconfig
+drwxr-xr-x 2 judhistir_369 judhistir_369 4096 Sep 30 19:33 .landscape
+-rw------- 1 judhistir_369 judhistir_369   20 Nov 25 16:48 .lesshst
+drwx------ 3 judhistir_369 judhistir_369 4096 Nov  2 05:52 .local
+-rw-r--r-- 1 judhistir_369 judhistir_369    0 Nov 25 15:00 .motd_shown
+-rw-r--r-- 1 judhistir_369 judhistir_369  807 Sep 30 19:31 .profile
+drwxr-xr-x 8 judhistir_369 judhistir_369 4096 Nov 25 16:50 DeveloperPortfolio
+-rw-r--r-- 1 judhistir_369 judhistir_369  175 Nov  2 06:17 attendence.sh
+drwxr-xr-x 3 judhistir_369 judhistir_369 4096 Nov  6 17:09 cse103_lab
+drwxr-xr-x 6 judhistir_369 judhistir_369 4096 Oct  7 09:13 linux_practice
+-rw-r--r-- 1 judhistir_369 judhistir_369  103 Nov  2 06:09 number.sh
+-rw------- 1 judhistir_369 judhistir_369    9 Nov  2 05:53 script.sh.save
+-rw------- 1 judhistir_369 judhistir_369    1 Nov  2 05:59 sh.save
+========== ps aux | head -10 ==========
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.2  0.4  24184 15444 ?        Ss   16:42   0:03 /sbin/init
+root           2  0.0  0.0   3820  2524 hvc0     Sl+  16:42   0:00 /init
+root           3  0.0  0.0   3680  2220 hvc0     S+   16:42   0:00 init-watcher
+root           7  0.0  0.0   3820  2292 hvc0     Sl+  16:42   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          62  0.0  0.5  50676 18456 ?        S<s  16:42   0:00 /usr/lib/systemd/systemd-journald
+systemd+      94  0.0  0.3  22428 14444 ?        Ss   16:42   0:00 /usr/lib/systemd/systemd-resolved
+root         105  0.1  0.3  34716 11992 ?        Ss   16:42   0:01 /usr/lib/systemd/systemd-udevd
+root         127  0.0  0.0   2888  2012 ?        Ss   16:42   0:00 /bin/sh /usr/lib/systemd/scripts/chronyd-starter.sh -n -F 1
+root         128  0.0  0.0   4472  3116 ?        Ss   16:42   0:00 /usr/sbin/cron -f -P
+========== df -h ==========
+Filesystem      Size  Used Avail Use% Mounted on
+none            1.8G     0  1.8G   0% /usr/lib/modules/6.18.58.1-microsoft-standard-WSL2
+/dev/sdb         97M   97M     0 100% /usr/src/linux-headers-6.18.58.1-microsoft-standard-WSL2
+none            1.8G  4.0K  1.8G   1% /mnt/wsl
+drivers         476G  184G  292G  39% /usr/lib/wsl/drivers
+/dev/sdd       1007G  1.7G  955G   1% /
+none            1.8G   36K  1.8G   1% /mnt/wslg
+none            1.8G     0  1.8G   0% /usr/lib/wsl/lib
+rootfs          1.8G  3.4M  1.8G   1% /init
+none            1.8G  520K  1.8G   1% /run
+none            1.8G     0  1.8G   0% /run/lock
+none            1.8G     0  1.8G   0% /run/shm
+none            1.8G  104K  1.8G   1% /mnt/wslg/versions.txt
+none            1.8G  104K  1.8G   1% /mnt/wslg/doc
+C:\             476G  184G  292G  39% /mnt/c
+tmpfs           1.8G     0  1.8G   0% /tmp
+none            1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+none            1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+none            1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           356M   12K  356M   1% /run/user/1000
+========== free -h ==========
+               total        used        free      shared  buff/cache   available
+Mem:           3.5Gi       460Mi       2.8Gi       4.1Mi       320Mi       3.0Gi
+Swap:          1.0Gi          0B       1.0Gi
